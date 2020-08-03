@@ -1,0 +1,122 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+ .project {
+     background: lighten($primary-color, 10%);
+     display: grid;
+     grid-template-areas: 
+            "T T"
+            "image description"           
+            "image btn";
+     grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto auto auto;
+     border-radius: 0.5rem;
+ }
+
+.img-container-inner {
+    grid-area: image;
+    border-radius: 0.5rem;
+    margin: 0 1rem;
+    width: 20vw;
+    height: 40vh;
+}
+.projectTitle {
+    grid-area: T;
+    margin: 0 1rem;
+}
+.projectDescription {
+    grid-area: description;
+    margin: 0 1rem ;
+    line-height: 1.5rem;
+}
+.btn-group-work{
+    grid-area: btn;
+    display: flex;
+    justify-content: center;
+    padding: 1rem; 
+}
+
+@media screen and (min-width: 300px) {
+    .project {
+        display: grid;
+        grid-template-areas: 
+        "T T"
+        "image image"           
+        "description description"
+        "btn btn";
+    }
+    .img-container-inner {
+        min-width: 250px;
+        margin: auto;
+    }
+    .btn-group {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .project {
+        display: grid;
+        grid-template-areas: 
+        "T T"
+        "image image"           
+        "description description"
+        "btn btn";
+    }
+    .img-container-inner {
+        min-width: 250px;
+        margin: auto;
+    }
+    .btn-group {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .project {
+        display: grid;
+        grid-template-areas: 
+            "T T"
+            "image description"           
+            "image btn";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto;
+    }
+    .img-container-inner {
+        margin: 0 1rem;
+        width: 20vw;
+        height: 40vh;
+    }
+    .btn-group {
+        display: grid;
+        justify-content: center;
+    }
+    .projectDescription{
+        margin: 0 1rem;
+    }
+}
+@media screen and (min-width: 2500px) {
+    .project {
+        display: grid;
+        grid-template-areas: 
+            "T T"
+            "image description"           
+            "image btn";
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto auto auto;
+    }
+    .img-container-inner {
+        margin: 1rem 1rem;
+        width: 20vw;
+        height: 40vh;
+    }
+    .btn-group {
+        display: grid;
+        justify-content: center;
+    }
+    .projectDescription{
+        margin: 0 1rem;
+    }
+}

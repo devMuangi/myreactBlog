@@ -6,18 +6,26 @@ import PropTypes from "prop-types";
 
 export default class Blog extends Component {
   render() {
-    const { id, blogTitle, subtitle, blogImage, author, blogText, postedOn } = this.props.blog;
+    const { id, blogTitle, subtitle, blogTime, author, blogText, blogImage, blogIntro} = this.props.blog;
     return (
-      
-          <div className="blog" 
-          onClick={()=> console.log("u want to read to read my blogs??")}>
-          <Link to="/Blogpage" className="Links">
-          <h2>{blogTitle}</h2>
-          <h3>{subtitle}</h3>
-          <h4>{author}</h4>
-          <p>{blogText}</p>
-          </Link>
-          </div>
+          <ProductConsumer>
+          {(value) =>(
+              <div className="blog" 
+              onClick={()=> value.handleDetail(id)}>
+              <Link to="/Blogpage" className="Links">
+              <h2>{blogTitle}</h2>
+              <h3>{subtitle}</h3>
+              {/* <h4>{author}</h4> */}
+              <h6>{blogTime}</h6>
+              <p>{blogIntro}</p>
+              <Link to='/Blogpage' className="btn-primary">
+                  Read More
+              </Link>
+              </Link>
+              </div>
+          )}
+     
+          </ProductConsumer>
     
     );
   }

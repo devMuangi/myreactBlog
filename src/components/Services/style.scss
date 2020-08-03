@@ -1,0 +1,23 @@
+
+.services-display {
+    
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-gap: 1rem;
+}
+.services-display > * {
+    grid-column: 2;
+    min-width: 0;
+}
+@media screen and (max-width: 500px) {
+    .services-display {
+       display: grid;
+       grid-template-columns: 5px 1fr 5px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .services-display {
+        display: grid;
+        grid-template-columns: 5px 1fr 5px;
+     }
+}

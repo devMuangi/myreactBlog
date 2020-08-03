@@ -30,9 +30,10 @@ export default class Navbar extends Component {
        </div> 
         <ul className={this.state.isOpen ? "menu-navbar show-nav" : "menu-navbar"}>
             <li className="menu-navbar__link"><Link to="/">Home</Link></li>
+            <li className="menu-navbar__link"><Link to="/Services">Services</Link></li>
             <li className="menu-navbar__link"><Link to="/About">About</Link></li>
             <li className="menu-navbar__link"><Link to="/Work">Work</Link></li>
-            <li className="menu-navbar__link"><Link to="/Contact">Contact</Link></li>
+            <li className="menu-navbar__link"><Link to="/Contact">Hire Me</Link></li>
         </ul>
       </div>
     </nav>

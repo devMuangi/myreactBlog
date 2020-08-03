@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Blog from '../Blog';
 import "./style.scss";
-import {BlogsArray} from '../Data';
 import {ProductConsumer} from '../Context/context';
 
 export default class Blogs extends Component {
@@ -20,7 +19,6 @@ export default class Blogs extends Component {
           </div>
         
       </React.Fragment>
-      /* <Snack /> */
     );
   }
 }

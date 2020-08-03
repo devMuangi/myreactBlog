@@ -1,0 +1,21 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+.blog-container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+.blog-container > * {
+    grid-column: 2;
+    min-width: 0;
+}
+.blog-text {
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 500px) {
+    .blog-container {
+        display: grid;
+        grid-template-columns: 20px 1fr 20px;
+    }
+}

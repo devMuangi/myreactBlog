@@ -1,0 +1,53 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+
+.about-me-main {
+    background: lighten($primary-color, 10%);
+    width: 60vw;
+    height: 100%;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-areas: "img description"
+                          "btn description";
+    grid-template-columns: 1fr 3fr;
+    border-radius: 0.5rem;
+
+}
+.myRoundImage {
+    grid-area: img;
+    margin: 1.5rem;
+    height: 40vh;
+    width: 20vw;
+    border-radius: 0.5rem;
+}
+.description {
+    grid-area: description;
+    margin: 0 1rem ;
+    line-height: 1.5rem;
+}
+.btn-primary {
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: .5rem;
+}
+.btn-group {
+    grid-area: btn;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .about-me-main {
+        width: 90vw;
+        display: grid;
+        grid-template-areas: "img img"
+                            "description description"
+                            "btn btn";
+    }
+    .myRoundImage {
+        min-width: 250px;
+    }
+}
+

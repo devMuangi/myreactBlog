@@ -1,0 +1,36 @@
+$primary-color: #272727;
+$secondary-color: #ff652f;
+ .service {
+     background: lighten($primary-color, 10%);
+     display: grid;
+     grid-template-areas: 
+            "T T"
+            "description description"
+            "btn ." ;         
+     grid-template-columns: 1fr 3fr;
+     grid-template-rows: auto auto ;
+     border-radius: 0.5rem;
+ }
+
+.serviceTitle {
+    grid-area: T;
+    margin: 0 1rem;
+}
+.btn-primary{
+    grid-area: btn;
+}
+.serviceDescription {
+    grid-area: description;
+    margin: 0 1rem ;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .service {
+        display: grid;
+        grid-template-areas: 
+        "T T"          
+        "description description"
+        "btn btn";
+    }
+}

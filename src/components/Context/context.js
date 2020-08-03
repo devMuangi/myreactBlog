@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
-import { BlogsArray } from '../Data';
+import { BlogsArray ,projectData ,serviceData ,singularBlog} from '../Data';
 
 const ProductContext = React.createContext();
 
  class ProductProvider extends Component {
    state = {
+     //All data initialized here
      blogs:[],
-     //detailProduct:detailProduct
-     //BlogsArray
+    singularBlog:singularBlog,
+    projectData:projectData,
+    //  projectData:[]
+    serviceData:serviceData
    };
    componentDidMount() {
      this.setBlogs();
@@ -22,19 +25,23 @@ const ProductContext = React.createContext();
        return { blogs: tempBlogs };
      });
    };
-   handleDetail = ()=>{
-     console.log('hello from detail');
-   }
-   addToCart = ()=>{
-    console.log('hello from addToCart');
+   getBlog = id => {
+    const blog = this.state.blogs.find(item => item.id ===id);
+    return blog;
   }
+  handleDetail = id =>{
+    const blog = this.getBlog(id);
+    this.setState(()=>{
+      return {singularBlog:blog}
+    })
+  }
+  
   render() {
     return (
       <ProductContext.Provider 
       value={{
         ...this.state,
-        handleDetail: this.handleDetail,
-        addToCart: this.addToCart
+        handleDetail: this.handleDetail
       }}>
         {this.props.children}
       </ProductContext.Provider>

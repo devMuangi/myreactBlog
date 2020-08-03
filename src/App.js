@@ -10,6 +10,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import About from './components/About';
 import Default from './components/Default';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
           <Route path="/Work"  component={Work}/>
           <Route path="/Contact"  component={Contact}/>
           <Route path="/Blogpage"  component={Blogpage}/>
-
+          <Route path="/Services"  component={Services}/>
           <Route component = {Default}/>
         </Switch>
           <Footer /> 
