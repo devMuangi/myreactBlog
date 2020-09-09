@@ -6,7 +6,7 @@ export default function Banner({children,title,subtitle,image}) {
     <div className="banner">
      <h1>{title}</h1>
      {/* <div>{image}</div> */}
-     <div>{image}</div>
+     <div>{image}</div> 
      <p>{subtitle}</p>
      {children}
     </div>

@@ -8,7 +8,7 @@
      top: 0;
      left: 0;
      width: 100vw;
-     height: 8vh;
+     height: 10vh;
      opacity: 0.98;
      z-index:1;
  }
@@ -65,8 +65,11 @@
   }
 
  .logo {
-      margin-right: auto;
-      height: 40px;
+       margin-right: auto;
+       position: relative;
+       margin-left: 1.5rem;
+       margin-top: 0.5rem;
+       
  }
   
  .show-nav {
@@ -95,5 +98,6 @@
     margin: 0 2rem;
     padding: 0.5rem 0;
   }
+
 } 
 

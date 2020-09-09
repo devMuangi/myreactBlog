@@ -12,7 +12,7 @@ export default class Home extends Component {
     return (
       <>
       <Hero>
-        <Banner title="welcome to devWrld" subtitle="Read hundreds of soft tutorials on general developer stuff">
+        <Banner title="welcome to my world" subtitle="Read hundreds of soft tutorials on general developer stuff">
         </Banner>
       </Hero>
 
