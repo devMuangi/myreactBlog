@@ -10,11 +10,7 @@ export default class About extends Component {
     return (
       <React.Fragment>
       <Hero>
-        <Banner title="Get to Know me more !" subtitle="All the information you need about me is available here">
-        {/* <img src="img/dave.jpg" className="myRoundImage" alt="aboutMe??"/> */}
-            <Link to='/about' className="btn-primary">
-                  download C.V
-            </Link>
+        <Banner title="What's this all about?" subtitle="emoji ">
         </Banner>
       </Hero>
 
@@ -22,7 +18,9 @@ export default class About extends Component {
          <img src="img/dave.jpg" className="myRoundImage" alt="aboutMe??"></img>
          <div className="description">
             <p>
-              Occasional continuing possession we insensible an sentiments as is. Law but reasonably motionless principles she. Has six worse downs far blush rooms above stood.\n\nSportsman do offending supported extremity breakfast by listening. Decisively advantages nor expression unpleasing she led met. Estate was tended ten boy nearer seemed. As so seeing latter he should thirty whence. Steepest speaking up attended it as. Made neat an on be gave show snug tore.\n\nMust you with him from him her were more. In eldest be it result should remark vanity square. Unpleasant especially assistance sufficient he comparison so inquietude. Branch one shy edward stairs turned has law wonder horses. Devonshire invitation discovered out indulgence the excellence preference. Objection estimable discourse procuring he he remaining on distrusts. Simplicity affronting inquietude for now sympathize age. She meant new their sex could defer child. An lose at quit to life do dull.\nTo sorry world an at do spoil along. Incommode he depending do frankness remainder to. Edward day almost active him friend thirty piqued. People as period twenty my extent as. Set was better abroad ham plenty secure had horses. Admiration has sir decisively excellence say everything inhabiting acceptance. Sooner settle add put you sudden him.\nDemesne far hearted suppose venture excited see had has. Dependent on so extremely delivered by. Yet ﻿no jokes worse her why. Bed one supposing breakfast day fulfilled off depending questions. Whatever boy her exertion his extended. Ecstatic followed handsome drawings entirely mrs one yet outweigh. Of acceptance insipidity remarkably is invitation.
+              Hi I'm David and welcome to devWORLD.I publish articles every week to help you out with all the tech knowledge you need.
+              My passion is to work with businesses and individuals who want a share of the online market place by making their ideas come to life. 
+              My go to technologies are REACT | REACT NATIVE | NODE JS.These are not the only technologies I'm farmiliar with ,we can always come to an agreement depending on the needs of my client.
             </p>       
          </div>
             <div className="btn-group">
@@ -30,6 +28,9 @@ export default class About extends Component {
                 Lincenses & Certifications
                 </Link>
                 <Link to='/about' className="btn-primary">
+                  download resume
+                 </Link>
+                {/* <Link to='/about' className="btn-primary">
                  github icon
                  </Link>
                  <Link to='/about' className="btn-primary">
@@ -37,7 +38,8 @@ export default class About extends Component {
                  </Link>
                  <Link to='/about' className="btn-primary">
                    Freecodecamp icon
-                 </Link>
+                 </Link> */}
+                 
               </div>
       </div>
       </React.Fragment>

@@ -15,7 +15,7 @@ export default class Blogpage extends Component {
           return (
             <>
              <Hero>
-             <Banner title={blogTitle} subtitle={subtitle}>
+             <Banner title={blogTitle} subtitle={subtitle} >
              </Banner>
              </Hero>
             <div className="blog-container">

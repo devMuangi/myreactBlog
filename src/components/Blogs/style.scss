@@ -8,6 +8,10 @@
     grid-column: 2;
     min-width: 0;
 }
+.code {
+    background-color: red;
+    font-family: monospace;
+}
 @media screen and (max-width: 500px) {
     .blogs-display {
        display: grid;
