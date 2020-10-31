@@ -1,11 +1,15 @@
-$primary-color: #272727;
-$secondary-color: #ff652f;
+$primary-color:  #242526;
+$secondary-color: #dadce1;
 $speed: 800ms;
+$nav-size: 60px;
+$border: 1px solid #474a4d;
+$border-radius: 8px;
 body {
   background: $primary-color;
   margin: 2;
-  color: lighten($primary-color, 80%);;
+  color: lighten($primary-color, 80%);
   height: 100vh;
+  width: 100vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
   min-width: 0;
@@ -15,6 +19,17 @@ body {
 h1, h2, h3 ,h4 ,h6{
   font-weight: 400;
   color: $secondary-color;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: $secondary-color;
+  text-decoration: none;
 }
 
 .btn-primary {
@@ -32,3 +47,6 @@ h1, h2, h3 ,h4 ,h6{
   text-decoration: bold;
   transition: all $speed ease;
 }
+
+
+

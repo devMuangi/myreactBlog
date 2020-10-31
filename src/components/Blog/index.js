@@ -14,13 +14,9 @@ export default class Blog extends Component {
               onClick={()=> value.handleDetail(id)}>
               <Link to="/Blogpage" className="Links">
               <h2>{blogTitle}</h2>
-              <h3>{subtitle}</h3>
-              {/* <h4>{author}</h4> */}
+              <h4>{author}</h4> 
               <h6>{blogTime}</h6>
               <p>{blogIntro}</p>
-              <Link to='/Blogpage' className="btn-primary">
-                  Read More
-              </Link>
               </Link>
               </div>
           )}

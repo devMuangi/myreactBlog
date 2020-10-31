@@ -1,5 +1,5 @@
-// import React, { useState } from 'react';
-import React, { Component } from "react";
+import React, { useState } from 'react';
+import { Component } from "react";
 import { Link } from 'react-router-dom';
 import './style.scss';
 import { FaAlignRight } from "react-icons/fa";
